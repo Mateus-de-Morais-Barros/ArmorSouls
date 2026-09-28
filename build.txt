@@ -1,0 +1,3 @@
+displayName = Armor Souls
+author = TheMathews
+version = 0.1

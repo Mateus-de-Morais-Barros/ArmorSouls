@@ -1,0 +1,430 @@
+Configs: {
+	ArmorSoulsConfig: {
+		DisplayName: Armor Souls Config
+
+		IncludePieceDamageBonuses: {
+			Label: Include Individual Piece Damage Bonuses
+			Tooltip:
+				'''
+				Souls of armors with class-specific helmet variants (Cobalt, Mythril, Palladium, Orichalcum, Adamantite, Titanium, Chlorophyte, Shroomite, Hallowed) also grant the flat damage/critical/speed bonuses of each individual piece, not just the unique set bonus effect.
+				Disable this to only grant the unique set bonus effect (e.g. mana reduction, ammo saving), keeping the souls simpler and weaker.
+				'''
+		}
+	}
+}
+
+Items: {
+	WoodSoul: {
+		DisplayName: Wood Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Wood Armor
+			+2 defense
+			'''
+	}
+
+	CopperSoul: {
+		DisplayName: Copper Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Copper Armor
+			+2 defense
+			'''
+	}
+
+	TinSoul: {
+		DisplayName: Tin Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Tin Armor
+			+2 defense
+			'''
+	}
+
+	IronSoul: {
+		DisplayName: Iron Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Iron Armor
+			+2 defense
+			'''
+	}
+
+	LeadSoul: {
+		DisplayName: Lead Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Lead Armor
+			+3 defense
+			'''
+	}
+
+	SilverSoul: {
+		DisplayName: Silver Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Silver Armor
+			+3 defense
+			'''
+	}
+
+	TungstenSoul: {
+		DisplayName: Tungsten Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Tungsten Armor
+			+3 defense
+			'''
+	}
+
+	GoldSoul: {
+		DisplayName: Gold Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Gold Armor
+			+3 defense
+			'''
+	}
+
+	PlatinumSoul: {
+		DisplayName: Platinum Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Platinum Armor
+			+4 defense
+			'''
+	}
+
+	CactusSoul: {
+		DisplayName: Cactus Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Cactus Armor
+			+1 defense
+			Attackers take damage when striking you
+			'''
+	}
+
+	PumpkinSoul: {
+		DisplayName: Pumpkin Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Pumpkin Armor
+			Increases damage dealt by 10%
+			'''
+	}
+
+	MiningSoul: {
+		DisplayName: Mining Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Mining Armor
+			Increases mining speed by 30%
+			'''
+	}
+
+	NinjaSoul: {
+		DisplayName: Ninja Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Ninja Armor
+			Increases movement speed by 20%
+			'''
+	}
+
+	GladiatorSoul: {
+		DisplayName: Gladiator Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Gladiator Armor
+			Grants immunity to knockback
+			'''
+	}
+
+	FossilSoul: {
+		DisplayName: Fossil Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Fossil Armor
+			20% chance not to consume ammo
+			'''
+	}
+
+	BeeSoul: {
+		DisplayName: Bee Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Bee Armor
+			Increases minion damage by 10%
+			'''
+	}
+
+	JungleSoul: {
+		DisplayName: Jungle Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Jungle Armor
+			Reduces mana usage by 16%
+			'''
+	}
+
+	MeteorSoul: {
+		DisplayName: Meteor Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Meteor Armor
+			Space Gun costs 0 mana
+			'''
+	}
+
+	NecroSoul: {
+		DisplayName: Necro Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Necro Armor
+			20% chance not to consume ammo
+			'''
+	}
+
+	ShadowSoul: {
+		DisplayName: Shadow Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Shadow Armor
+			Increases movement speed and acceleration by 15%
+			'''
+	}
+
+	CrimsonSoul: {
+		DisplayName: Crimson Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Crimson Armor
+			Greatly increases life regeneration
+			'''
+	}
+
+	MoltenSoul: {
+		DisplayName: Molten Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Molten Armor
+			Increases melee damage by 17%
+			Cannot be set on fire
+			'''
+	}
+
+	ObsidianSoul: {
+		DisplayName: Obsidian Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Obsidian Armor
+			Increases minion damage by 15%
+			Increases whip range by 30% and whip speed by 15%
+			'''
+	}
+
+	CobaltSoul: {
+		DisplayName: Cobalt Soul
+		Tooltip:
+			'''
+			Grants the set bonuses of all Cobalt armors
+			Increases melee speed by 15%, 20% chance not to consume ammo, reduces mana usage by 14%
+			Also grants the damage, critical strike, mana and movement speed bonuses of every individual piece
+			'''
+	}
+
+	PalladiumSoul: {
+		DisplayName: Palladium Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Palladium Armor
+			Greatly increases life regeneration after striking an enemy
+			Also grants the damage, critical strike and mana bonuses of every individual piece
+			'''
+	}
+
+	MythrilSoul: {
+		DisplayName: Mythril Soul
+		Tooltip:
+			'''
+			Grants the set bonuses of all Mythril armors
+			20% chance not to consume ammo, reduces mana usage by 17%, increases melee critical strike chance by 10%
+			Also grants the damage, critical strike and mana bonuses of every individual piece
+			'''
+	}
+
+	OrichalcumSoul: {
+		DisplayName: Orichalcum Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Orichalcum Armor
+			Flower petals fall on your target when striking an enemy
+			Also grants the damage, critical strike, mana and movement speed bonuses of every individual piece
+			'''
+	}
+
+	AdamantiteSoul: {
+		DisplayName: Adamantite Soul
+		Tooltip:
+			'''
+			Grants the set bonuses of all Adamantite armors
+			Increases melee and movement speed by 20%, 25% chance not to consume ammo, reduces mana usage by 19%
+			Also grants the damage, critical strike and mana bonuses of every individual piece
+			'''
+	}
+
+	TitaniumSoul: {
+		DisplayName: Titanium Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Titanium Armor
+			Attacking enemies summons a protective barrier of titanium shards
+			Also grants the damage, critical strike and mana bonuses of every individual piece
+			'''
+	}
+
+	FrostSoul: {
+		DisplayName: Frost Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Frost Armor
+			Melee and ranged attacks inflict Frostbite
+			Increases melee and ranged damage by 10%
+			'''
+	}
+
+	ForbiddenSoul: {
+		DisplayName: Forbidden Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Forbidden Armor
+			Double-tap DOWN to summon an Ancient Storm at the cursor location
+			'''
+	}
+
+	SpiderSoul: {
+		DisplayName: Spider Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Spider Armor
+			Increases minion damage by 12%
+			'''
+	}
+
+	HallowedSoul: {
+		DisplayName: Hallowed Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Hallowed Armor
+			Striking an enemy grants the Holy Protection buff, dodging the next attack
+			Also grants the damage, critical strike, mana and minion bonuses of every individual piece
+			'''
+	}
+
+	ChlorophyteSoul: {
+		DisplayName: Chlorophyte Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Chlorophyte Armor
+			Summons a powerful Leaf Crystal above your head to shoot at nearby enemies
+			Also grants the damage, critical strike, mana and movement speed bonuses of every individual piece
+			'''
+	}
+
+	TurtleSoul: {
+		DisplayName: Turtle Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Turtle Armor
+			Reduces damage taken by 15%
+			Attackers also take double damage
+			'''
+	}
+
+	BeetleSoul: {
+		DisplayName: Beetle Soul
+		Tooltip:
+			'''
+			Grants the set bonuses of both Beetle armors
+			Melee attacks build up Beetle Might to increase damage and attack speed
+			Beetles protect you from damage, granting up to 45% damage reduction
+			'''
+	}
+
+	ShroomiteSoul: {
+		DisplayName: Shroomite Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Shroomite Armor
+			Standing still enters Stealth Mode, increasing ranged stats and reducing threat
+			Also grants the damage, critical strike and movement speed bonuses of every individual piece
+			'''
+	}
+
+	SpectreSoul: {
+		DisplayName: Spectre Soul
+		Tooltip:
+			'''
+			Grants the set bonuses of both Spectre armors
+			Magic damage releases healing orbs to heal yourself and allies
+			Magic damage releases damaging homing soul bolts
+			'''
+	}
+
+	TikiSoul: {
+		DisplayName: Tiki Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Tiki Armor
+			Increases your max number of minions by 1
+			Increases whip range by 30%
+			'''
+	}
+
+	SpookySoul: {
+		DisplayName: Spooky Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Spooky Armor
+			Increases minion damage by 25%
+			'''
+	}
+
+	SolarSoul: {
+		DisplayName: Solar Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Solar Flare Armor
+			Reduces damage taken by 12%
+			Generates a protective solar shield and allows performing a fiery dash
+			'''
+	}
+
+	VortexSoul: {
+		DisplayName: Vortex Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Vortex Armor
+			Double-tap DOWN to enter Vortex Stealth, boosting ranged damage and reducing threat
+			'''
+	}
+
+	NebulaSoul: {
+		DisplayName: Nebula Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Nebula Armor
+			Damaging enemies spawns boosters that increase damage, life, and mana regeneration
+			'''
+	}
+
+	StardustSoul: {
+		DisplayName: Stardust Soul
+		Tooltip:
+			'''
+			Grants the set bonus of Stardust Armor
+			Summons a Stardust Guardian to fight alongside you
+			'''
+	}
+}

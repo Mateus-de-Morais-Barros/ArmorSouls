@@ -1,0 +1,12 @@
+C:\Users\Mateus\Documents\My Games\Terraria\tModLoader\ModSources\ArmorSouls\bin\Debug\net8.0\ArmorSouls.deps.json
+C:\Users\Mateus\Documents\My Games\Terraria\tModLoader\ModSources\ArmorSouls\bin\Debug\net8.0\ArmorSouls.dll
+C:\Users\Mateus\Documents\My Games\Terraria\tModLoader\ModSources\ArmorSouls\bin\Debug\net8.0\ArmorSouls.pdb
+C:\Users\Mateus\Documents\My Games\Terraria\tModLoader\ModSources\ArmorSouls\obj\Debug\net8.0\ArmorSouls.csproj.AssemblyReference.cache
+C:\Users\Mateus\Documents\My Games\Terraria\tModLoader\ModSources\ArmorSouls\obj\Debug\net8.0\ArmorSouls.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mateus\Documents\My Games\Terraria\tModLoader\ModSources\ArmorSouls\obj\Debug\net8.0\ArmorSouls.AssemblyInfoInputs.cache
+C:\Users\Mateus\Documents\My Games\Terraria\tModLoader\ModSources\ArmorSouls\obj\Debug\net8.0\ArmorSouls.AssemblyInfo.cs
+C:\Users\Mateus\Documents\My Games\Terraria\tModLoader\ModSources\ArmorSouls\obj\Debug\net8.0\ArmorSouls.csproj.CoreCompileInputs.cache
+C:\Users\Mateus\Documents\My Games\Terraria\tModLoader\ModSources\ArmorSouls\obj\Debug\net8.0\ArmorSouls.dll
+C:\Users\Mateus\Documents\My Games\Terraria\tModLoader\ModSources\ArmorSouls\obj\Debug\net8.0\refint\ArmorSouls.dll
+C:\Users\Mateus\Documents\My Games\Terraria\tModLoader\ModSources\ArmorSouls\obj\Debug\net8.0\ArmorSouls.pdb
+C:\Users\Mateus\Documents\My Games\Terraria\tModLoader\ModSources\ArmorSouls\obj\Debug\net8.0\ref\ArmorSouls.dll

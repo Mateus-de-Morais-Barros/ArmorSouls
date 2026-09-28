@@ -1,1 +1,2 @@
-Modify this file with a description of your mod.
+Turns full armor sets into craftable Souls. Equip a Soul or keep it in your Piggy Bank to get
+that set's bonus while wearing any armor you like.

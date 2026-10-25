@@ -9,6 +9,12 @@ namespace ArmorSouls.Common.Players
     {
         public override void PostUpdateEquips()
         {
+            // Com os slots de alma ativos, as almas só funcionam equipadas neles
+            if (ArmorSoulBase.SoulSlotsEnabled)
+            {
+                return;
+            }
+
             HashSet<int> appliedSouls = new HashSet<int>();
 
             // Percorre o Piggy Bank

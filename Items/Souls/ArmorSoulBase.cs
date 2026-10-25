@@ -32,8 +32,23 @@ namespace ArmorSouls.Items.Souls
             }
         }
 
+        // Quando ativo, almas só funcionam nos slots próprios de alma
+        public static bool SoulSlotsEnabled => ModContent.GetInstance<ArmorSoulsServerConfig>().EnableSoulSlots;
+
+        public override bool CanEquipAccessory(Player player, int slot, bool modded)
+        {
+            // Bloqueia os slots de acessório vanilla; os slots de alma filtram o resto em CanAcceptItem
+            return !SoulSlotsEnabled || modded;
+        }
+
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
+            // Almas que já estavam em slots vanilla antes de ativar a opção ficam sem efeito
+            if (SoulSlotsEnabled && IsInVanillaAccessorySlot(player))
+            {
+                return;
+            }
+
             // Só aplica se o jogador NÃO estiver com a armadura completa vestida
             if (!IsFullArmorSetEquipped(player))
             {
@@ -41,8 +56,30 @@ namespace ArmorSouls.Items.Souls
             }
         }
 
+        private bool IsInVanillaAccessorySlot(Player player)
+        {
+            // player.armor[3..9] são os slots funcionais de acessório vanilla
+            for (int i = 3; i < 10; i++)
+            {
+                if (player.armor[i] == Item)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         public override void ModifyTooltips(List<TooltipLine> tooltips)
         {
+            if (SoulSlotsEnabled)
+            {
+                tooltips.Add(new TooltipLine(Mod, "SoulSlotOnly", "Can only be equipped in a Soul Slot")
+                {
+                    OverrideColor = new Microsoft.Xna.Framework.Color(150, 150, 150)
+                });
+            }
+
             if (HasPieceDamageBonuses && !ModContent.GetInstance<ArmorSoulsConfig>().IncludePieceDamageBonuses)
             {
                 tooltips.Add(new TooltipLine(Mod, "PieceDamageBonusDisabled",

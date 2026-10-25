@@ -10,3 +10,4 @@ C:\Users\Mateus\Documents\My Games\Terraria\tModLoader\ModSources\ArmorSouls\obj
 C:\Users\Mateus\Documents\My Games\Terraria\tModLoader\ModSources\ArmorSouls\obj\Debug\net8.0\refint\ArmorSouls.dll
 C:\Users\Mateus\Documents\My Games\Terraria\tModLoader\ModSources\ArmorSouls\obj\Debug\net8.0\ArmorSouls.pdb
 C:\Users\Mateus\Documents\My Games\Terraria\tModLoader\ModSources\ArmorSouls\obj\Debug\net8.0\ref\ArmorSouls.dll
+C:\Users\Mateus\Documents\My Games\Terraria\tModLoader\ModSources\ArmorSouls\obj\Debug\net8.0\ArmorSouls.sourcelink.json

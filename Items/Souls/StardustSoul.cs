@@ -1,6 +1,7 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using ArmorSouls.Common.Players;
 
 namespace ArmorSouls.Items.Souls
 {
@@ -24,6 +25,7 @@ namespace ArmorSouls.Items.Souls
         {
             // Set Bonus vanilla: Invoca o Stardust Guardian para lutar ao lado do jogador
             player.setStardust = true;
+            player.GetModPlayer<StardustSoulPlayer>().stardustSoul = true;
         }
 
         public override void AddRecipes()

@@ -11,6 +11,24 @@ Configs: {
 				'''
 		}
 	}
+
+	ArmorSoulsServerConfig: {
+		DisplayName: Armor Souls Server Config
+
+		EnableSoulSlots: {
+			Label: Enable Soul Slots
+			Tooltip:
+				'''
+				Adds dedicated accessory slots for Armor Souls.
+				While enabled, souls can only be equipped in these slots: they can't go in regular accessory slots and souls in the Piggy Bank have no effect.
+				'''
+		}
+
+		SoulSlotCount: {
+			Label: Soul Slot Count
+			Tooltip: Number of Soul Slots available when Soul Slots are enabled
+		}
+	}
 }
 
 Items: {

@@ -1,1 +1,46 @@
-Turns full armor sets into craftable Souls. Equip a Soul in its own Soul Slot to get that set's bonus while wearing any armor you like. Soul Slots unlock as you progress through the game, and can be turned off in the config to equip souls like regular accessories or keep them in your Piggy Bank.
+[h1]Armor Souls[/h1]
+
+Keep an armor's [b]set bonus[/b] without wearing the armor! Craft a full armor set into a [b]Soul[/b], equip it, and wear whatever armor you like while keeping the effects you rely on from earlier sets.
+
+[h2]How it works[/h2]
+[list]
+[*][b]Craft a soul[/b] by combining the helmet, chestplate and leggings of an armor set at the right crafting station (Work Bench/Anvil, Hellforge, Mythril/Orichalcum Anvil or Ancient Manipulator).
+[*][b]Equip it in a Soul Slot.[/b] Souls have their own accessory slots, next to your regular accessories. Right-clicking a soul equips it straight into a free Soul Slot.
+[*][b]No double-dipping.[/b] A soul does nothing while you're wearing the full armor set it came from, and extra copies of the same soul don't stack.
+[/list]
+
+[h2]Progressive Soul Slots[/h2]
+You start with [b]1 Soul Slot[/b] and unlock another after each of these milestones in your world:
+[list]
+[*]Skeletron
+[*]Wall of Flesh
+[*]Any Mechanical Boss
+[*]Plantera
+[*]Moon Lord
+[/list]
+That's up to [b]6 Soul Slots[/b] by the end of the game. Just want to have fun with every soul? Turn progression off to get all slots from the start, raise the slot count up to 10, or turn Soul Slots off entirely.
+
+[h2]Hiding visuals[/h2]
+Toggle the visibility (eye) icon on a soul's slot to hide its visuals: the [b]Stardust Guardian[/b], the [b]Leaf Crystal[/b], the [b]Beetle orbs[/b] and the [b]Solar shield[/b]. The effect stays active; the Stardust Guardian and Leaf Crystal keep attacking, just invisibly.
+
+[h2]44 Souls[/h2]
+[table]
+[tr][th]Tier[/th][th]Souls[/th][/tr]
+[tr][td]Pre-Hardmode (basic)[/td][td]Wood, Cactus, Copper, Tin, Iron, Lead, Silver, Tungsten, Gold, Platinum, Pumpkin, Mining, Ninja, Gladiator, Fossil, Obsidian[/td][/tr]
+[tr][td]Pre-Hardmode (advanced)[/td][td]Bee, Jungle, Meteor, Necro, Shadow, Crimson, Molten[/td][/tr]
+[tr][td]Hardmode (ore)[/td][td]Cobalt, Palladium, Mythril, Orichalcum, Adamantite, Titanium[/td][/tr]
+[tr][td]Hardmode (other)[/td][td]Frost, Forbidden, Spider, Hallowed, Chlorophyte, Turtle, Beetle, Shroomite, Spectre, Tiki, Spooky[/td][/tr]
+[tr][td]Lunar[/td][td]Solar, Vortex, Nebula, Stardust[/td][/tr]
+[/table]
+
+Sets with several class-specific helmets (like Cobalt's Helmet, Mask and Hat) accept any of them in the recipe, and the soul grants [b]the set bonuses of every variant[/b]. For example, the Spectre Soul grants both the Hood's healing and the Mask's damage bonus.
+
+[h2]Configuration[/h2]
+Found under [i]Settings → Mod Configuration → Armor Souls Config[/i]. The config is server-side, so in multiplayer everyone follows the host's settings.
+[list]
+[*][b]Enable Soul Slots[/b] (On): souls can only be equipped in Soul Slots. Turn it off to equip souls like regular accessories and use them from storage.
+[*][b]Progressive Soul Slots[/b] (On): Soul Slots unlock with world progression. Turn it off to have every slot from the start.
+[*][b]Soul Slot Count[/b] (6): maximum number of Soul Slots, from 1 to 10.
+[*][b]Souls Work in Piggy Bank / Safe / Defender's Forge / Void Vault[/b] (Piggy Bank on, others off): with Soul Slots off, souls kept in these storages grant their effects without being equipped.
+[*][b]Include Individual Piece Damage Bonuses[/b] (On): souls of multi-helmet sets also grant the damage, crit and speed bonuses of the individual armor pieces. Turn it off for simpler, weaker souls.
+[/list]

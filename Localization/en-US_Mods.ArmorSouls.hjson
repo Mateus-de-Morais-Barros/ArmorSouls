@@ -377,6 +377,7 @@ Items: {
 			'''
 			Grants the set bonus of Chlorophyte Armor
 			Summons a powerful Leaf Crystal above your head to shoot at nearby enemies
+			Hide this accessory to make the Leaf Crystal invisible
 			Also grants the damage, critical strike, mana and movement speed bonuses of every individual piece
 			'''
 	}
@@ -398,6 +399,7 @@ Items: {
 			Grants the set bonuses of both Beetle armors
 			Melee attacks build up Beetle Might to increase damage and attack speed
 			Beetles protect you from damage, granting up to 45% damage reduction
+			Hide this accessory to make the beetles invisible
 			'''
 	}
 
@@ -447,6 +449,7 @@ Items: {
 			Grants the set bonus of Solar Flare Armor
 			Reduces damage taken by 12%
 			Generates a protective solar shield and allows performing a fiery dash
+			Hide this accessory to make the solar shield invisible
 			'''
 	}
 
@@ -474,6 +477,7 @@ Items: {
 			'''
 			Grants the set bonus of Stardust Armor
 			Summons a Stardust Guardian to fight alongside you
+			Hide this accessory to make the Stardust Guardian invisible
 			'''
 	}
 }

@@ -1,1 +1,16 @@
-Turns full armor sets into craftable Souls. Equip a Soul in its own Soul Slot to get that set's bonus while wearing any armor you like. Soul Slots unlock as you progress through the game, and can be turned off in the config to equip souls like regular accessories or keep them in your Piggy Bank.
+Keep an armor's set bonus without wearing the armor! Craft a full armor set into a Soul, equip it, and wear whatever armor you like while keeping the effects you rely on from earlier sets.
+
+How it works:
+- Craft a soul by combining the helmet, chestplate and leggings of an armor set.
+- Equip it in a Soul Slot, a dedicated accessory slot for souls. Right-click a soul to equip it.
+- A soul does nothing while you're wearing the full armor set it came from, and copies of the same soul don't stack.
+
+Progressive Soul Slots:
+You start with 1 Soul Slot and unlock another after Skeletron, Wall of Flesh, any Mechanical Boss, Plantera and Moon Lord, for up to 6 slots.
+
+Hiding visuals:
+Toggle the visibility icon on a soul's slot to hide the Stardust Guardian, Leaf Crystal, Beetle orbs or Solar shield. The effect stays active.
+
+44 souls are included, from Wood to the Lunar sets.
+
+Everything is configurable: turn progression off to get every slot from the start, change the slot count (up to 10), or turn Soul Slots off to equip souls like regular accessories and keep them in your Piggy Bank, Safe, Defender's Forge or Void Vault.

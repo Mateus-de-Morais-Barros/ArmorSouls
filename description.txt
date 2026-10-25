@@ -1,1 +1,1 @@
-Turns full armor sets into craftable Souls. Equip a Soul or keep it in your Piggy Bank to get that set's bonus while wearing any armor you like.
+Turns full armor sets into craftable Souls. Equip a Soul in its own Soul Slot to get that set's bonus while wearing any armor you like. Soul Slots unlock as you progress through the game, and can be turned off in the config to equip souls like regular accessories or keep them in your Piggy Bank.

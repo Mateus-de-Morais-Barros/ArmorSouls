@@ -10,12 +10,33 @@ namespace ArmorSouls.Common.Configs
 
         public override ConfigScope Mode => ConfigScope.ServerSide;
 
-        [DefaultValue(false)]
+        [Header("SoulSlots")]
+        [DefaultValue(true)]
         public bool EnableSoulSlots;
 
+        [DefaultValue(true)]
+        public bool ProgressiveSoulSlots;
+
         [Range(1, MaxSoulSlots)]
-        [DefaultValue(3)]
+        [DefaultValue(6)]
         [Slider]
         public int SoulSlotCount;
+
+        [Header("SoulStorage")]
+        [DefaultValue(true)]
+        public bool SoulsWorkInPiggyBank;
+
+        [DefaultValue(false)]
+        public bool SoulsWorkInSafe;
+
+        [DefaultValue(false)]
+        public bool SoulsWorkInDefendersForge;
+
+        [DefaultValue(false)]
+        public bool SoulsWorkInVoidVault;
+
+        [Header("SoulBonuses")]
+        [DefaultValue(true)]
+        public bool IncludePieceDamageBonuses;
     }
 }

@@ -1,6 +1,7 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using ArmorSouls.Common.Players;
 
 namespace ArmorSouls.Items.Souls
 {
@@ -24,6 +25,11 @@ namespace ArmorSouls.Items.Souls
         {
             // Set Bonus vanilla: Escudo protetor solar (redução de dano) e Solar Dash explosivo
             player.setSolar = true;
+        }
+
+        public override void HideSoulVisuals(Player player)
+        {
+            player.GetModPlayer<SoulVisualsPlayer>().hideSolarShield = true;
         }
 
         public override void AddRecipes()

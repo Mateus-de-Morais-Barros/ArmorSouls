@@ -1,6 +1,55 @@
 Configs: {
-	ArmorSoulsConfig: {
+	ArmorSoulsServerConfig: {
 		DisplayName: Armor Souls Config
+
+		Headers: {
+			SoulSlots: Soul Slots
+			SoulStorage: Soul Storage
+			SoulBonuses: Soul Bonuses
+		}
+
+		EnableSoulSlots: {
+			Label: Enable Soul Slots
+			Tooltip:
+				'''
+				Adds dedicated accessory slots for Armor Souls.
+				While enabled, souls can only be equipped in these slots: they can't go in regular accessory slots and souls in storage have no effect.
+				'''
+		}
+
+		ProgressiveSoulSlots: {
+			Label: Progressive Soul Slots
+			Tooltip:
+				'''
+				Soul Slots are unlocked as the world progresses: 1 slot at the start, plus 1 after each of Skeletron, Wall of Flesh, any Mechanical Boss, Plantera and Moon Lord (up to the Soul Slot Count).
+				Disable this to have all Soul Slots available from the start.
+				'''
+		}
+
+		SoulSlotCount: {
+			Label: Soul Slot Count
+			Tooltip: Maximum number of Soul Slots when Soul Slots are enabled
+		}
+
+		SoulsWorkInPiggyBank: {
+			Label: Souls Work in Piggy Bank
+			Tooltip: Souls stored in the Piggy Bank grant their effects. Only applies when Soul Slots are disabled.
+		}
+
+		SoulsWorkInSafe: {
+			Label: Souls Work in Safe
+			Tooltip: Souls stored in the Safe grant their effects. Only applies when Soul Slots are disabled.
+		}
+
+		SoulsWorkInDefendersForge: {
+			Label: Souls Work in Defender's Forge
+			Tooltip: Souls stored in the Defender's Forge grant their effects. Only applies when Soul Slots are disabled.
+		}
+
+		SoulsWorkInVoidVault: {
+			Label: Souls Work in Void Vault
+			Tooltip: Souls stored in the Void Vault grant their effects. Only applies when Soul Slots are disabled.
+		}
 
 		IncludePieceDamageBonuses: {
 			Label: Include Individual Piece Damage Bonuses
@@ -9,24 +58,6 @@ Configs: {
 				Souls of armors with class-specific helmet variants (Cobalt, Mythril, Palladium, Orichalcum, Adamantite, Titanium, Chlorophyte, Shroomite, Hallowed) also grant the flat damage/critical/speed bonuses of each individual piece, not just the unique set bonus effect.
 				Disable this to only grant the unique set bonus effect (e.g. mana reduction, ammo saving), keeping the souls simpler and weaker.
 				'''
-		}
-	}
-
-	ArmorSoulsServerConfig: {
-		DisplayName: Armor Souls Server Config
-
-		EnableSoulSlots: {
-			Label: Enable Soul Slots
-			Tooltip:
-				'''
-				Adds dedicated accessory slots for Armor Souls.
-				While enabled, souls can only be equipped in these slots: they can't go in regular accessory slots and souls in the Piggy Bank have no effect.
-				'''
-		}
-
-		SoulSlotCount: {
-			Label: Soul Slot Count
-			Tooltip: Number of Soul Slots available when Soul Slots are enabled
 		}
 	}
 }

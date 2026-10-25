@@ -1,6 +1,7 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using ArmorSouls.Common.Players;
 
 namespace ArmorSouls.Items.Souls
 {
@@ -25,6 +26,11 @@ namespace ArmorSouls.Items.Souls
 
             // Bônus Shell: Beetle Endurance (besouros defensivos que reduzem dano)
             player.beetleBuff = true;
+        }
+
+        public override void HideSoulVisuals(Player player)
+        {
+            player.GetModPlayer<SoulVisualsPlayer>().hideBeetleOrbs = true;
         }
 
         public override bool IsFullArmorSetEquipped(Player player)

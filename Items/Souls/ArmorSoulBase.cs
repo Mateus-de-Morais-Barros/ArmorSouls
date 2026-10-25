@@ -22,11 +22,20 @@ namespace ArmorSouls.Items.Souls
         // Sobrescrito por almas que possuem bônus de peça, para exibir o aviso na tooltip quando desativado
         public virtual bool HasPieceDamageBonuses => false;
 
-        public void ApplyEffects(Player player)
+        // Esconde o visual do set bonus (ex: Stardust Guardian) sem remover o efeito
+        // Chamado quando o "esconder visual" do slot está ativo
+        public virtual void HideSoulVisuals(Player player) { }
+
+        public void ApplyEffects(Player player, bool hideVisual = false)
         {
             ApplySoulEffects(player);
 
-            if (HasPieceDamageBonuses && ModContent.GetInstance<ArmorSoulsConfig>().IncludePieceDamageBonuses)
+            if (hideVisual)
+            {
+                HideSoulVisuals(player);
+            }
+
+            if (HasPieceDamageBonuses && ModContent.GetInstance<ArmorSoulsServerConfig>().IncludePieceDamageBonuses)
             {
                 ApplyPieceDamageBonuses(player);
             }
@@ -52,7 +61,7 @@ namespace ArmorSouls.Items.Souls
             // Só aplica se o jogador NÃO estiver com a armadura completa vestida
             if (!IsFullArmorSetEquipped(player))
             {
-                ApplyEffects(player);
+                ApplyEffects(player, hideVisual);
             }
         }
 
@@ -80,7 +89,7 @@ namespace ArmorSouls.Items.Souls
                 });
             }
 
-            if (HasPieceDamageBonuses && !ModContent.GetInstance<ArmorSoulsConfig>().IncludePieceDamageBonuses)
+            if (HasPieceDamageBonuses && !ModContent.GetInstance<ArmorSoulsServerConfig>().IncludePieceDamageBonuses)
             {
                 tooltips.Add(new TooltipLine(Mod, "PieceDamageBonusDisabled",
                     "Individual piece damage bonuses are disabled in the mod config")

@@ -28,6 +28,11 @@ namespace ArmorSouls.Items.Souls
             player.GetModPlayer<StardustSoulPlayer>().stardustSoul = true;
         }
 
+        public override void HideSoulVisuals(Player player)
+        {
+            player.GetModPlayer<SoulVisualsPlayer>().hideStardustGuardian = true;
+        }
+
         public override void AddRecipes()
         {
             CreateRecipe()

@@ -20,8 +20,27 @@ namespace ArmorSouls.Common.Slots
 
         public override bool IsEnabled()
         {
+            return ModContent.GetInstance<ArmorSoulsServerConfig>().EnableSoulSlots && index < GetAvailableSlotCount();
+        }
+
+        // Com a progressão ativa, começa com 1 slot e libera +1 a cada marco do mundo, até o máximo da config
+        public static int GetAvailableSlotCount()
+        {
             ArmorSoulsServerConfig config = ModContent.GetInstance<ArmorSoulsServerConfig>();
-            return config.EnableSoulSlots && index < config.SoulSlotCount;
+
+            if (!config.ProgressiveSoulSlots)
+            {
+                return config.SoulSlotCount;
+            }
+
+            int unlocked = 1;
+            if (NPC.downedBoss3) unlocked++;          // Skeletron
+            if (Main.hardMode) unlocked++;            // Wall of Flesh
+            if (NPC.downedMechBossAny) unlocked++;    // Qualquer boss mecânico
+            if (NPC.downedPlantBoss) unlocked++;      // Plantera
+            if (NPC.downedMoonlord) unlocked++;       // Moon Lord
+
+            return System.Math.Min(unlocked, config.SoulSlotCount);
         }
 
         // Almas não têm visual, então só o slot funcional é usado

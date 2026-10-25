@@ -1,6 +1,7 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using ArmorSouls.Common.Players;
 
 namespace ArmorSouls.Items.Souls
 {
@@ -22,6 +23,11 @@ namespace ArmorSouls.Items.Souls
         {
             // Set Bonus vanilla: Invoca o Leaf Crystal sobre a cabeça do jogador
             player.AddBuff(BuffID.LeafCrystal, 18000);
+        }
+
+        public override void HideSoulVisuals(Player player)
+        {
+            player.GetModPlayer<SoulVisualsPlayer>().hideLeafCrystal = true;
         }
 
         public override bool HasPieceDamageBonuses => true;

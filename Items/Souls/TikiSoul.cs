@@ -27,6 +27,16 @@ namespace ArmorSouls.Items.Souls
             player.whipRangeMultiplier += 0.20f;
         }
 
+        public override bool HasPieceDamageBonuses => true;
+
+        public override void ApplyPieceDamageBonuses(Player player)
+        {
+            // Cada peça: +1 lacaio e +10% de dano de summon; Máscara: +10% de alcance de chicotes
+            player.maxMinions += 3;
+            player.GetDamage(DamageClass.Summon) += 0.30f;
+            player.whipRangeMultiplier += 0.10f;
+        }
+
         public override void AddRecipes()
         {
             CreateRecipe()

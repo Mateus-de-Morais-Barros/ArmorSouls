@@ -22,8 +22,8 @@ namespace ArmorSouls.Items.Souls
 
         public override void ApplySoulEffects(Player player)
         {
-            // Set Bonus vanilla: Reflete dano recebido de volta aos inimigos
-            player.thorns = 1f;
+            // Set Bonus vanilla: Inimigos que encostam no jogador levam dano
+            player.cactusThorns = true;
         }
 
         public override void AddRecipes()

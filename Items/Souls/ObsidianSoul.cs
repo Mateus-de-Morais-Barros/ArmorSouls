@@ -28,6 +28,15 @@ namespace ArmorSouls.Items.Souls
             player.GetDamage(DamageClass.Summon) += 0.15f;
         }
 
+        public override bool HasPieceDamageBonuses => true;
+
+        public override void ApplyPieceDamageBonuses(Player player)
+        {
+            // Elmo e Calças: +8% de dano de summon cada; Camisa: +1 lacaio
+            player.maxMinions += 1;
+            player.GetDamage(DamageClass.Summon) += 0.16f;
+        }
+
         public override void AddRecipes()
         {
             CreateRecipe()

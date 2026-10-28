@@ -18,7 +18,7 @@ namespace ArmorSouls.Items.Souls
         public override void ApplySoulEffects(Player player)
         {
             // Set Bonus vanilla de todas as madeiras: +1 de defesa
-            player.statDefense += 2;
+            player.statDefense += 1;
         }
 
         // Verifica se o jogador está vestindo o conjunto completo de qualquer tipo de madeira

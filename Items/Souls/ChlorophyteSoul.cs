@@ -22,7 +22,9 @@ namespace ArmorSouls.Items.Souls
         public override void ApplySoulEffects(Player player)
         {
             // Set Bonus vanilla: Invoca o Leaf Crystal sobre a cabeça do jogador
-            player.AddBuff(BuffID.LeafCrystal, 18000);
+            // O buff é aplicado em SoulSetBonusPlayer.PostUpdateEquips; desligar crystalLeaf aqui impede o UpdateArmorSets vanilla de removê-lo
+            player.crystalLeaf = false;
+            player.GetModPlayer<SoulSetBonusPlayer>().chlorophyteSoul = true;
         }
 
         public override void HideSoulVisuals(Player player)

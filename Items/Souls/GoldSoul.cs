@@ -19,7 +19,7 @@ namespace ArmorSouls.Items.Souls
 
         public override void ApplySoulEffects(Player player)
         {
-            player.statDefense += 4;
+            player.statDefense += 3;
         }
 
         public override void AddRecipes()

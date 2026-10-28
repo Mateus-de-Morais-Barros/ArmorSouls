@@ -39,7 +39,7 @@ Some set bonuses show up on your character: the Stardust Guardian, the Leaf Crys
 
 ### Sets with more than one helmet
 
-Where an armor set has several class-specific helmets (such as Cobalt's Helmet, Mask and Hat), any of them can be used in the recipe. The soul then grants **the set bonuses of every variant**. For example, the Beetle Soul grants both the Beetle Shell and Beetle Scale Mail bonuses, and the Spectre Soul grants both the Hood's healing and the Mask's damage bonus.
+Where an armor set has several class-specific helmets (such as Cobalt's Helmet, Mask and Hat), any of them can be used in the recipe. The soul then grants **the set bonuses of every variant**. For example, the Spectre Soul grants both the Hood's healing and the Mask's damage bonus. The exception is Beetle: its two bonuses share the same beetles and can't run together, so the Beetle Soul is crafted from the Beetle Shell and grants Beetle Endurance.
 
 ## Configuration
 
@@ -68,7 +68,7 @@ These only apply when Soul Slots are off. Souls in an enabled storage grant thei
 
 | Option | Default | Effect |
 |---|---|---|
-| Include Individual Piece Damage Bonuses | On | Souls of multi-helmet sets (Cobalt, Mythril, Palladium, Orichalcum, Adamantite, Titanium, Chlorophyte, Shroomite, Hallowed) also grant the flat damage, crit and speed bonuses of the individual armor pieces. Turn it off if you want souls to give only the set-bonus effect, which makes them simpler and weaker. |
+| Include Individual Piece Damage Bonuses | On | Souls of multi-helmet sets (Cobalt, Mythril, Palladium, Orichalcum, Adamantite, Titanium, Chlorophyte, Shroomite, Hallowed) and of summoner sets (Bee, Obsidian, Spider, Forbidden, Tiki, Spooky, Stardust) also grant the flat damage, crit, speed and minion slot bonuses of the individual armor pieces. Turn it off if you want souls to give only the set-bonus effect, which makes them simpler and weaker. |
 
 When this option is off, affected souls say so in their tooltip.
 
@@ -91,6 +91,7 @@ ArmorSouls/
 │   ├── Slots/SoulAccessorySlot.cs         # Soul Slots and their progression
 │   └── Players/
 │       ├── SoulBankPlayer.cs              # Applies souls kept in storage (Piggy Bank, Safe, ...)
+│       ├── SoulSetBonusPlayer.cs          # Runs set bonus logic vanilla only runs while the set is worn
 │       ├── SoulVisualsPlayer.cs           # Hides set bonus visuals when the slot is hidden
 │       └── StardustSoulPlayer.cs          # Summons the Stardust Guardian
 ├── Items/Souls/

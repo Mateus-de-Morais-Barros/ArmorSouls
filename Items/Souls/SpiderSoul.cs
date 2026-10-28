@@ -26,6 +26,15 @@ namespace ArmorSouls.Items.Souls
             player.GetDamage(DamageClass.Summon) += 0.12f;
         }
 
+        public override bool HasPieceDamageBonuses => true;
+
+        public override void ApplyPieceDamageBonuses(Player player)
+        {
+            // Máscara e Peitoral: +1 lacaio e +5% de dano de summon cada; Grevas: +1 lacaio e +6%
+            player.maxMinions += 3;
+            player.GetDamage(DamageClass.Summon) += 0.16f;
+        }
+
         public override void AddRecipes()
         {
             CreateRecipe()

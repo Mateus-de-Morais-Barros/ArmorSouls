@@ -22,8 +22,8 @@ namespace ArmorSouls.Items.Souls
 
         public override void ApplySoulEffects(Player player)
         {
-            // Set Bonus vanilla: +17% de dano corpo a corpo e imunidade a chamas
-            player.GetDamage(DamageClass.Melee) += 0.17f;
+            // Set Bonus vanilla: +10% de dano corpo a corpo e imunidade a chamas
+            player.GetDamage(DamageClass.Melee) += 0.10f;
             player.buffImmune[BuffID.OnFire] = true;
         }
 

@@ -33,6 +33,17 @@ namespace ArmorSouls.Items.Souls
             player.GetModPlayer<SoulVisualsPlayer>().hideStardustGuardian = true;
         }
 
+        public override bool HasPieceDamageBonuses => true;
+
+        public override void ApplyPieceDamageBonuses(Player player)
+        {
+            // Elmo: +1 lacaio e +1 sentinela; Peitoral e Calças: +2 lacaios e +15% de alcance de chicotes cada; +22% de dano de summon cada
+            player.maxMinions += 5;
+            player.maxTurrets += 1;
+            player.GetDamage(DamageClass.Summon) += 0.66f;
+            player.whipRangeMultiplier += 0.30f;
+        }
+
         public override void AddRecipes()
         {
             CreateRecipe()

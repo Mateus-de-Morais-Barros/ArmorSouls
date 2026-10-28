@@ -23,6 +23,7 @@ namespace ArmorSouls.Items.Souls
         public override void ApplySoulEffects(Player player)
         {
             // Set Bonus vanilla: Reflete dano duplicado contra agressores em combate corpo a corpo
+            player.thorns = 1f;
             player.turtleThorns = true;
 
             // Set Bonus vanilla (1.4+): Reduz o dano recebido em 15%

@@ -8,7 +8,7 @@ namespace ArmorSouls.Common.Players
 {
     public class SoulBankPlayer : ModPlayer
     {
-        public override void PostUpdateEquips()
+        public override void UpdateEquips()
         {
             // Com os slots de alma ativos, as almas só funcionam equipadas neles
             if (ArmorSoulBase.SoulSlotsEnabled)

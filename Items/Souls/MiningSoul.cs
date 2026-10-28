@@ -22,8 +22,8 @@ namespace ArmorSouls.Items.Souls
 
         public override void ApplySoulEffects(Player player)
         {
-            // Set Bonus vanilla: +30% de velocidade de mineração
-            player.pickSpeed -= 0.30f;
+            // Set Bonus vanilla: +10% de velocidade de mineração
+            player.pickSpeed -= 0.10f;
         }
 
         public override void AddRecipes()

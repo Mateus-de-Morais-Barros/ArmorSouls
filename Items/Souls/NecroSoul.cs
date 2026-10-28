@@ -22,8 +22,8 @@ namespace ArmorSouls.Items.Souls
 
         public override void ApplySoulEffects(Player player)
         {
-            // Set Bonus vanilla: 20% de chance de economizar munição
-            player.ammoCost80 = true;
+            // Set Bonus vanilla: +10% de chance de crítico à distância
+            player.GetCritChance(DamageClass.Ranged) += 10f;
         }
 
         public override void AddRecipes()

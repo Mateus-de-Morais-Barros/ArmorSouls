@@ -21,8 +21,8 @@ namespace ArmorSouls.Items.Souls
 
         public override void ApplySoulEffects(Player player)
         {
+            // Set Bonus vanilla: +20% de velocidade de movimento
             player.moveSpeed += 0.20f;
-            player.blackBelt = true;
         }
 
         public override void AddRecipes()

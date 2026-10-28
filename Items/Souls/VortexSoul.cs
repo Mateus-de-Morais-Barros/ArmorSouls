@@ -1,6 +1,7 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using ArmorSouls.Common.Players;
 
 namespace ArmorSouls.Items.Souls
 {
@@ -24,6 +25,11 @@ namespace ArmorSouls.Items.Souls
         {
             // Set Bonus vanilla: Permite alternar o modo furtivo (Vortex Stealth)
             player.setVortex = true;
+
+            // O UpdateArmorSets vanilla desliga o stealth quando o set não está vestido; o estado é restaurado em SoulSetBonusPlayer
+            SoulSetBonusPlayer setBonusPlayer = player.GetModPlayer<SoulSetBonusPlayer>();
+            setBonusPlayer.vortexSoul = true;
+            setBonusPlayer.vortexStealthWasActive = player.vortexStealthActive;
         }
 
         public override void AddRecipes()

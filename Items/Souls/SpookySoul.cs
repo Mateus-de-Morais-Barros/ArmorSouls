@@ -26,6 +26,16 @@ namespace ArmorSouls.Items.Souls
             player.GetDamage(DamageClass.Summon) += 0.25f;
         }
 
+        public override bool HasPieceDamageBonuses => true;
+
+        public override void ApplyPieceDamageBonuses(Player player)
+        {
+            // Elmo: +1 lacaio; Peitoral: +2 lacaios; Calças: +1 lacaio e +20% de velocidade de movimento; +11% de dano de summon cada
+            player.maxMinions += 4;
+            player.GetDamage(DamageClass.Summon) += 0.33f;
+            player.moveSpeed += 0.20f;
+        }
+
         public override void AddRecipes()
         {
             CreateRecipe()

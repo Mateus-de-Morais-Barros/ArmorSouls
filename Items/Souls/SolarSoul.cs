@@ -25,6 +25,8 @@ namespace ArmorSouls.Items.Souls
         {
             // Set Bonus vanilla: Escudo protetor solar (redução de dano) e Solar Dash explosivo
             player.setSolar = true;
+            player.endurance += 0.12f;
+            player.GetModPlayer<SoulSetBonusPlayer>().solarSoul = true;
         }
 
         public override void HideSoulVisuals(Player player)

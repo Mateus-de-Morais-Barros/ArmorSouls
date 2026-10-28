@@ -21,11 +21,10 @@ namespace ArmorSouls.Items.Souls
 
         public override void ApplySoulEffects(Player player)
         {
-            // Bônus Scale Mail: Beetle Might (dano e velocidade melee crescentes)
-            player.beetleOffense = true;
-
             // Bônus Shell: Beetle Endurance (besouros defensivos que reduzem dano)
-            player.beetleBuff = true;
+            // Beetle Might (Scale Mail) usa o mesmo contador e os mesmos besouros, então não pode ser combinado
+            player.beetleDefense = true;
+            player.GetModPlayer<SoulSetBonusPlayer>().beetleSoul = true;
         }
 
         public override void HideSoulVisuals(Player player)
@@ -45,21 +44,12 @@ namespace ArmorSouls.Items.Souls
 
         public override void AddRecipes()
         {
-            var beetleChests = new[]
-            {
-                ItemID.BeetleScaleMail,
-                ItemID.BeetleShell
-            };
-
-            foreach (short chest in beetleChests)
-            {
-                CreateRecipe()
-                    .AddIngredient(ItemID.BeetleHelmet)
-                    .AddIngredient(chest)
-                    .AddIngredient(ItemID.BeetleLeggings)
-                    .AddTile(TileID.MythrilAnvil)
-                    .Register();
-            }
+            CreateRecipe()
+                .AddIngredient(ItemID.BeetleHelmet)
+                .AddIngredient(ItemID.BeetleShell)
+                .AddIngredient(ItemID.BeetleLeggings)
+                .AddTile(TileID.MythrilAnvil)
+                .Register();
         }
     }
 }

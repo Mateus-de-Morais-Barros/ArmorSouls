@@ -55,7 +55,7 @@ Configs: {
 			Label: Include Individual Piece Damage Bonuses
 			Tooltip:
 				'''
-				Souls of armors with class-specific helmet variants (Cobalt, Mythril, Palladium, Orichalcum, Adamantite, Titanium, Chlorophyte, Shroomite, Hallowed) also grant the flat damage/critical/speed bonuses of each individual piece, not just the unique set bonus effect.
+				Souls of armors with class-specific helmet variants (Cobalt, Mythril, Palladium, Orichalcum, Adamantite, Titanium, Chlorophyte, Shroomite, Hallowed) and of summoner armors (Bee, Obsidian, Spider, Forbidden, Tiki, Spooky, Stardust) also grant the flat damage/critical/speed/minion bonuses of each individual piece, not just the unique set bonus effect.
 				Disable this to only grant the unique set bonus effect (e.g. mana reduction, ammo saving), keeping the souls simpler and weaker.
 				'''
 		}
@@ -68,7 +68,7 @@ Items: {
 		Tooltip:
 			'''
 			Grants the set bonus of Wood Armor
-			+2 defense
+			+1 defense
 			'''
 	}
 
@@ -149,8 +149,7 @@ Items: {
 		Tooltip:
 			'''
 			Grants the set bonus of Cactus Armor
-			+1 defense
-			Attackers take damage when striking you
+			Enemies that touch you take damage
 			'''
 	}
 
@@ -168,7 +167,7 @@ Items: {
 		Tooltip:
 			'''
 			Grants the set bonus of Mining Armor
-			Increases mining speed by 30%
+			Increases mining speed by 10%
 			'''
 	}
 
@@ -205,6 +204,7 @@ Items: {
 			'''
 			Grants the set bonus of Bee Armor
 			Increases minion damage by 10%
+			Also grants the minion and damage bonuses of every individual piece
 			'''
 	}
 
@@ -231,7 +231,7 @@ Items: {
 		Tooltip:
 			'''
 			Grants the set bonus of Necro Armor
-			20% chance not to consume ammo
+			Increases ranged critical strike chance by 10%
 			'''
 	}
 
@@ -258,7 +258,7 @@ Items: {
 		Tooltip:
 			'''
 			Grants the set bonus of Molten Armor
-			Increases melee damage by 17%
+			Increases melee damage by 10%
 			Cannot be set on fire
 			'''
 	}
@@ -270,6 +270,7 @@ Items: {
 			Grants the set bonus of Obsidian Armor
 			Increases minion damage by 15%
 			Increases whip range by 30% and whip speed by 15%
+			Also grants the minion and damage bonuses of every individual piece
 			'''
 	}
 
@@ -349,6 +350,7 @@ Items: {
 			'''
 			Grants the set bonus of Forbidden Armor
 			Double-tap DOWN to summon an Ancient Storm at the cursor location
+			Also grants the minion, damage and mana bonuses of every individual piece
 			'''
 	}
 
@@ -358,6 +360,7 @@ Items: {
 			'''
 			Grants the set bonus of Spider Armor
 			Increases minion damage by 12%
+			Also grants the minion and damage bonuses of every individual piece
 			'''
 	}
 
@@ -396,8 +399,7 @@ Items: {
 		DisplayName: Beetle Soul
 		Tooltip:
 			'''
-			Grants the set bonuses of both Beetle armors
-			Melee attacks build up Beetle Might to increase damage and attack speed
+			Grants the set bonus of Beetle Shell Armor
 			Beetles protect you from damage, granting up to 45% damage reduction
 			Hide this accessory to make the beetles invisible
 			'''
@@ -430,6 +432,7 @@ Items: {
 			Grants the set bonus of Tiki Armor
 			Increases your max number of minions by 1
 			Increases whip range by 30%
+			Also grants the minion, damage and whip range bonuses of every individual piece
 			'''
 	}
 
@@ -439,6 +442,7 @@ Items: {
 			'''
 			Grants the set bonus of Spooky Armor
 			Increases minion damage by 25%
+			Also grants the minion, damage and movement speed bonuses of every individual piece
 			'''
 	}
 
@@ -478,6 +482,7 @@ Items: {
 			Grants the set bonus of Stardust Armor
 			Summons a Stardust Guardian to fight alongside you
 			Hide this accessory to make the Stardust Guardian invisible
+			Also grants the minion, sentry, damage and whip range bonuses of every individual piece
 			'''
 	}
 }

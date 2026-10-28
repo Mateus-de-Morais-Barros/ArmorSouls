@@ -1,6 +1,7 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using ArmorSouls.Common.Players;
 
 namespace ArmorSouls.Items.Souls
 {
@@ -24,6 +25,7 @@ namespace ArmorSouls.Items.Souls
         {
             // Set Bonus vanilla: Danificar inimigos gera Boosters de Nebulosa (Dano, Vida e Mana)
             player.setNebula = true;
+            player.GetModPlayer<SoulSetBonusPlayer>().nebulaSoul = true;
         }
 
         public override void AddRecipes()

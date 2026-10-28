@@ -22,6 +22,9 @@ namespace ArmorSouls.Items.Souls
         {
             // Set Bonus vanilla: Concede esquiva/imunidade (Holy Protection) ao acertar inimigos
             player.onHitDodge = true;
+
+            // Set Bonus vanilla do Capuz (Hallowed Hood): +2 lacaios
+            player.maxMinions += 2;
         }
 
         public override bool HasPieceDamageBonuses => true;

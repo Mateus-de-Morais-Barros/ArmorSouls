@@ -24,6 +24,9 @@ namespace ArmorSouls.Items.Souls
             // Set Bonus vanilla: Invoca o Leaf Crystal sobre a cabeça do jogador
             // O buff é aplicado em SoulSetBonusPlayer.PostUpdateEquips; desligar crystalLeaf aqui impede o UpdateArmorSets vanilla de removê-lo
             player.crystalLeaf = false;
+
+            // Set Bonus vanilla da Máscara (Chlorophyte Mask): +5% de redução de dano
+            player.endurance += 0.05f;
             player.GetModPlayer<SoulSetBonusPlayer>().chlorophyteSoul = true;
         }
 

@@ -370,6 +370,7 @@ Items: {
 			'''
 			Grants the set bonus of Hallowed Armor
 			Striking an enemy grants the Holy Protection buff, dodging the next attack
+			Increases your max number of minions by 2
 			Also grants the damage, critical strike, mana and minion bonuses of every individual piece
 			'''
 	}
@@ -380,6 +381,7 @@ Items: {
 			'''
 			Grants the set bonus of Chlorophyte Armor
 			Summons a powerful Leaf Crystal above your head to shoot at nearby enemies
+			Reduces damage taken by 5%
 			Hide this accessory to make the Leaf Crystal invisible
 			Also grants the damage, critical strike, mana and movement speed bonuses of every individual piece
 			'''
@@ -431,7 +433,7 @@ Items: {
 			'''
 			Grants the set bonus of Tiki Armor
 			Increases your max number of minions by 1
-			Increases whip range by 30%
+			Increases whip range by 20%
 			Also grants the minion, damage and whip range bonuses of every individual piece
 			'''
 	}

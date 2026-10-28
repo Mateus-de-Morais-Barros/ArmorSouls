@@ -33,7 +33,7 @@ Toggle the visibility (eye) icon on a soul's slot to hide its visuals: the [b]St
 [tr][td]Lunar[/td][td]Solar, Vortex, Nebula, Stardust[/td][/tr]
 [/table]
 
-Sets with several class-specific helmets (like Cobalt's Helmet, Mask and Hat) accept any of them in the recipe, and the soul grants [b]the set bonuses of every variant[/b]. For example, the Spectre Soul grants both the Hood's healing and the Mask's damage bonus.
+Sets with several class-specific helmets (like Cobalt's Helmet, Mask and Hat) accept any of them in the recipe, and the soul grants [b]the set bonuses of every variant[/b]. For example, the Spectre Soul grants both the Hood's healing and the Mask's damage bonus. The exception is Beetle, whose two bonuses can't run together: the Beetle Soul is crafted from the Beetle Shell.
 
 [h2]Configuration[/h2]
 Found under [i]Settings → Mod Configuration → Armor Souls Config[/i]. The config is server-side, so in multiplayer everyone follows the host's settings.
@@ -42,5 +42,5 @@ Found under [i]Settings → Mod Configuration → Armor Souls Config[/i]. The co
 [*][b]Progressive Soul Slots[/b] (On): Soul Slots unlock with world progression. Turn it off to have every slot from the start.
 [*][b]Soul Slot Count[/b] (6): maximum number of Soul Slots, from 1 to 10.
 [*][b]Souls Work in Piggy Bank / Safe / Defender's Forge / Void Vault[/b] (Piggy Bank on, others off): with Soul Slots off, souls kept in these storages grant their effects without being equipped.
-[*][b]Include Individual Piece Damage Bonuses[/b] (On): souls of multi-helmet sets also grant the damage, crit and speed bonuses of the individual armor pieces. Turn it off for simpler, weaker souls.
+[*][b]Include Individual Piece Damage Bonuses[/b] (On): souls of multi-helmet sets and of summoner sets (Bee, Obsidian, Spider, Forbidden, Tiki, Spooky, Stardust) also grant the damage, crit, speed and minion slot bonuses of the individual armor pieces. Turn it off for simpler, weaker souls.
 [/list]
